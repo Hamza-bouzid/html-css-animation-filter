@@ -1,0 +1,117 @@
+/**Esercizio 1**/
+.ex-1-square:hover {
+  background-color: red;
+  transition: all 0.5s;
+}
+/**Esercizio 2**/
+.ex-2-square:active {
+  transition: all 0.5s;
+  width: 300px;
+  height: 150px;
+}
+/**Esercizio 3**/
+.ex-3-square:hover {
+  transition: all 0.5s;
+  border-radius: 50%;
+}
+/**Esercizio 4**/
+.ex-4-square:hover {
+  transition: all 1s;
+  opacity: 0;
+}
+/**Esercizio 5**/
+.ex-5-square:hover {
+  transition: all 0.5s;
+  width: 100px;
+  height: 100px;
+}
+.ex-5-square:active {
+  transition: all 0.5s;
+  width: 30px;
+  height: 30px;
+}
+/**Esercizio 6**/
+.ex-6-img:hover{
+  filter: grayscale();
+}
+/**Esercizio 7**/
+.ex-7-img:hover {
+  transition: all 0.8s;
+  filter: grayscale(80%) blur(2px);
+}
+/**Esercizio 8**/
+.ex-8-img:hover {
+  transition: all 0.8s;
+  filter: contrast(200%) saturate(30%);
+  border-radius: 10px;
+}
+/**Esercizio 9**/
+.ex-9-img:hover {
+  transition: all 0.8s;
+  filter: contrast(150%) saturate(20%);
+  border-radius: 10px;
+  transform: scale(1.1);
+}
+/**Esercizio 10**/
+.ex-10-icon {
+  animation: spin 1s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+/**Esercizio 11**/
+.ex-11-icon:hover {
+  animation: spin-2 1s linear;
+}
+
+@keyframes spin-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/**Esercizio 12**/
+.ex-12-button:hover .ex-12-top-white {
+  animation: sposta-destra 1s linear;
+}
+@keyframes sposta-destra {
+  from {
+      left: 10%;
+  }
+  50% {
+      left: calc(100% - 60px);
+  }
+  to {
+      left: 10%;
+  }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+  animation: sposta-sinistra 1s linear;
+}
+@keyframes sposta-sinistra {
+  from {
+      rigth: 20%;
+  }
+  50% {
+    right: calc(100% - 60px);
+  }
+  to {
+      rigth: 20%;
+  }
+}
+/**Esercizio 13**/
